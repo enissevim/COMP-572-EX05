@@ -1,8 +1,8 @@
 close all; clc;
 
 % ORANGE (source) onto APPLE (background)
-im_bg  = im2double(imread('Apple.jpg'));     % BACKGROUND
-im_obj = im2double(imread('Orange.jpeg'));   % SOURCE to cut
+im_bg  = im2double(imread('Hand.jpeg'));     % BACKGROUND
+im_obj = im2double(imread('Eye.jpeg'));   % SOURCE to cut
 
 % 1) Draw polygon around the ORANGE (source)
 [poly_x, poly_y] = getPolygonForMask(im_obj);
